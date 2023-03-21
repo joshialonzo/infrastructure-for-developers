@@ -10,6 +10,12 @@ Activate virtual environment
 source venv/bin/activate
 ```
 
+Upgrade virtual environment
+
+```bash
+pip install --upgrade pip
+```
+
 Install requirements
 
 ```bash
