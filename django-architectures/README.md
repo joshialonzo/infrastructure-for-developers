@@ -13,3 +13,7 @@ This is the documentation of the Django architectures. In this section we will e
 * AWS Fargate
 * Security Group
 * Subnet
+
+## References
+
+* [Install AWS CLI 2](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#cliv2-linux-install)
