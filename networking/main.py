@@ -34,6 +34,10 @@ class Wired(Connection):
     cable: Cable
 
 
+class Wireless(Connection):
+    pass
+
+
 def main():
     laptop_1 = Laptop(name="Laptop 1")
     assert isinstance(laptop_1, Laptop)
@@ -51,6 +55,10 @@ def main():
     assert isinstance(ethernet_cable, Cable)
     assert isinstance(wired_connection, Connection)
     assert isinstance(wired_connection, Wired)
+
+    wireless = Wireless(name="WiFi")
+    assert isinstance(wireless, Connection)
+    assert isinstance(wireless, Wireless)
 
 
 if __name__ == "__main__":
