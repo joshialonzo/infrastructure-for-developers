@@ -24,3 +24,10 @@ Entities you need to be aware of:
     * Remove policy from user
     * Attach policy to group
     * Remove policy from group
+
+Accessing IAM
+
+* AWS Management Console
+* AWS Command Line Tools
+* AWS SDKs
+* IAM HTTPS API
