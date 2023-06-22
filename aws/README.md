@@ -1,11 +1,13 @@
-AWS Cloud Practitioner Exam
+# AWS
+
+## AWS Cloud Practitioner Exam
 
 * Validates overall understanding of the AWS Cloud.
 * Industry-recognized credential validating knowledge.
 * Broad understanding of the AWS Cloud, but no hands-on tasks.
 * All multiple-choice questions.
 
-AWS Cloud Practitioner Exam Domains
+## AWS Cloud Practitioner Exam Domains
 
 1. Cloud concepts
     * Define the AWS Cloud and its value proposition
@@ -25,3 +27,19 @@ AWS Cloud Practitioner Exam Domains
     * Need to be able to remember the different pricing models for AWS
     * Recognize various account structures in AWS billing and pricing
     * Identify resources available for billing support
+
+## Cloud concepts domain
+
+* Define the AWS Cloud and its value proposition.
+* Identify aspects of AWS Cloud economics.
+* List the different cloud architecture design principles.
+
+### Questions
+
+* What exactly is cloud computing?
+* What makes it different from legacy IT infrastructure?
+* How is the way you pay for resources different from buying and setting up the hardware in your own on-premises data centers?
+* Well-architected framework
+* Types of cloud computing
+* Types of cloud computing deployments
+* Advantages of cloud computing (over legacy IT infrastructure)
