@@ -54,3 +54,24 @@
 * Cables = TV Cables, Optic fiber Cables, or Copper telephone wires
 * Browser -> Request -> ISP -> Request -> Server -> Web Host
 * Web Host -> Packets -> Browser
+
+## Cloud Computing
+
+* On-demand delivery of:
+    * compute
+    * database storage
+    * application
+    * and other IT resources
+* Utilizes a pay-as-you-go model - pay only for what you use, when you use them
+    * Provides more flexibility
+* Most transactions utilize "buy first to use" such as computer or car
+* Traditionally, you need a procurement process to get the hardware
+* Before: Fixed costs
+* Now: Variable costs
+
+### Cloud Computing characteristics
+
+* Instantaneous access
+* Access resources where and when you want
+* More flexible and affordable than legacy IT infrastructure
+* Affordable for organizations and individuals with smaller budgets
