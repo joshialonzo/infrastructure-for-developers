@@ -43,3 +43,14 @@
 * Types of cloud computing
 * Types of cloud computing deployments
 * Advantages of cloud computing (over legacy IT infrastructure)
+
+## Introduction to Cloud Computing
+
+* The Cloud = The Internet
+* The internet = Worlwide network of interconnected devices
+* Devices = Computers, Servers, Cell phones, Tablets, or Amazon Alexas
+* Any device can be connected to any other device through internet
+* Connections = Cables and Wireless
+* Cables = TV Cables, Optic fiber Cables, or Copper telephone wires
+* Browser -> Request -> ISP -> Request -> Server -> Web Host
+* Web Host -> Packets -> Browser
