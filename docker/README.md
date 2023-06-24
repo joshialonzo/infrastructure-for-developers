@@ -78,3 +78,16 @@ Infrastructure
 ```bash
 docker run --rm hello-world
 ```
+
+## Install Docker on Linux Ubuntu
+
+```bash
+# install curl
+sudo apt install curl
+# download docker to the tmp folder
+curl -o /tmp/get-docker.sh https://get.docker.com
+# install docker
+sh /tmp/get-docker.sh
+# avoid to write sudo before the docker command
+sudo usermod -aG docker $USER
+```
