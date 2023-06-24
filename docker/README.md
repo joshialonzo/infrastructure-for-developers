@@ -55,3 +55,8 @@ Infrastructure
 * Monitor and restrict network and disk bandwidth
 * Monitor and restrict memory consumption
 * Assign disk quotas (Not supported by Docker)
+
+## Docker limitations
+
+* Natively only runs on Linux
+* Container images are bound to their parent operating systems
