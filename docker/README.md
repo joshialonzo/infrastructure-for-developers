@@ -72,3 +72,9 @@ Infrastructure
 * Dockerfiles make configuring and packaging apps and their environments really easy
 * The Docker Hub makes sharing images with anyone in the world easy
 * The Docker CLI makes it really easy to start your apps in containers
+
+## Test Docker is working properly
+
+```bash
+docker run --rm hello-world
+```
