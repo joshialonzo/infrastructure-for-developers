@@ -39,12 +39,19 @@ Infrastructure
 
 ## Namespaces
 
-Name | Description
-USERNS | User lists
-MOUNT | Access to file systems
-NET | Network communication
-IPC | Interprocess communication
-TIME | Ability to change time (Not supported by Docker)
-PID | Process ID Management
-CGROUP | Create control groups
-UTC | Create host/domain names
+* Name | Description
+* USERNS | User lists
+* MOUNT | Access to file systems
+* NET | Network communication
+* IPC | Interprocess communication
+* TIME | Ability to change time (Not supported by Docker)
+* PID | Process ID Management
+* CGROUP | Create control groups
+* UTC | Create host/domain names
+
+## Control group uses
+
+* Monitor and restrict CPU usage
+* Monitor and restrict network and disk bandwidth
+* Monitor and restrict memory consumption
+* Assign disk quotas (Not supported by Docker)
