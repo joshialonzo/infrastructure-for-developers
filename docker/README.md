@@ -30,3 +30,21 @@ App A, App B, ...
 Docker
 Host Operating System
 Infrastructure
+
+## Docker Anatomy
+
+* A container is composed of:
+    * container namespace
+    * container controller
+
+## Namespaces
+
+Name | Description
+USERNS | User lists
+MOUNT | Access to file systems
+NET | Network communication
+IPC | Interprocess communication
+TIME | Ability to change time (Not supported by Docker)
+PID | Process ID Management
+CGROUP | Create control groups
+UTC | Create host/domain names
