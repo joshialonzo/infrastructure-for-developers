@@ -1,5 +1,7 @@
 # Docker
 
+Docker containers are composed of namespaces and control groups.
+
 ## Virtual Machines
 
 * Use the hypervisor to emulate real hardware
@@ -39,6 +41,8 @@ Infrastructure
 
 ## Namespaces
 
+* Definition: What processes can see on a system
+
 * Name | Description
 * USERNS | User lists
 * MOUNT | Access to file systems
@@ -51,6 +55,8 @@ Infrastructure
 
 ## Control group uses
 
+* Definition: Limit resources that containers can use, like memory and processor time.
+
 * Monitor and restrict CPU usage
 * Monitor and restrict network and disk bandwidth
 * Monitor and restrict memory consumption
@@ -60,3 +66,9 @@ Infrastructure
 
 * Natively only runs on Linux
 * Container images are bound to their parent operating systems
+
+## Docker advantages
+
+* Dockerfiles make configuring and packaging apps and their environments really easy
+* The Docker Hub makes sharing images with anyone in the world easy
+* The Docker CLI makes it really easy to start your apps in containers
