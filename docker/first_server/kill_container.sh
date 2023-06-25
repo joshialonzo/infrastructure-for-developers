@@ -1,0 +1,1 @@
+docker kill container_id
