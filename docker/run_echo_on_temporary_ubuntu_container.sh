@@ -1,1 +1,2 @@
-docker run --rm --entrypoint sh ubuntu:latest -c 'echo "Hello World"' > /tmp/file && cat /tmp/file
+# docker run --rm --entrypoint sh ubuntu:latest -c "echo 'Hello World' > /tmp/file && cat /tmp/file"
+docker run --rm --entrypoint sh -v /tmp/container:/tmp ubuntu:latest -c "echo 'Hello World' > /tmp/file && cat /tmp/file"
