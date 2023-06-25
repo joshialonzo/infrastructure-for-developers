@@ -1,0 +1,1 @@
+docker run --rm --entrypoint sh ubuntu:latest -c 'echo "Hello World"' > /tmp/file && cat /tmp/file
