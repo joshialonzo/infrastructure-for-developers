@@ -91,3 +91,17 @@ sh /tmp/get-docker.sh
 # avoid to write sudo before the docker command
 sudo usermod -aG docker $USER
 ```
+
+## Best practices
+
+* Use verified images
+* Scan images
+    1. Clair
+    2. Trivy
+    3. Dagda
+* Avoid latest
+    * You don't know the version you are downloading
+    * The app's version can change when you pull later
+    * latest can be overriden, making rollback difficult
+* Use non-root users
+    * It makes your containers more secure
