@@ -52,3 +52,11 @@ Docker tutorials, including this one, typically walk through a simple example of
 * `docker-compose restart`
     * Stop all the containers
     * Start all the containers
+
+## Environment variables
+
+* Accessible inside the running Docker container
+
+## Build arguments
+
+* Accessible only at build time
