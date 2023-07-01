@@ -30,3 +30,11 @@ Docker tutorials, including this one, typically walk through a simple example of
 
 * Distributed systems: No tooling for running containers across multiple hosts
 * Complex production environments: no autoscaling
+
+## Docker Compose commands
+
+* `docker-compose up`
+* `docker-compose up -d`
+* `docker-compose down`
+* `docker-compose stop`
+* `docker-compose restart`
