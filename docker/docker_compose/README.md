@@ -34,7 +34,21 @@ Docker tutorials, including this one, typically walk through a simple example of
 ## Docker Compose commands
 
 * `docker-compose up`
+    * Build the image
+    * Create the container
+    * Start the application
 * `docker-compose up -d`
+    * Do the same as "up"
+    * Dettach the terminal
 * `docker-compose down`
+    * Stop all the containers
+    * Delete all containers and images
+    * Remove all artifacts
 * `docker-compose stop`
+    * Saves battery life
+    * Frees up memory
+* `docker-compose start`
+    * Start all the containers
 * `docker-compose restart`
+    * Stop all the containers
+    * Start all the containers
