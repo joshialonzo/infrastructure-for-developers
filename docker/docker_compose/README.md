@@ -13,3 +13,9 @@ Docker tutorials, including this one, typically walk through a simple example of
 * Specify end results
 * Systems will determine which steps to execute
 * Produces the same result each time
+
+## Configuration as code
+
+* Version control
+* Self-documenting
+* Easy management
