@@ -25,3 +25,8 @@ Docker tutorials, including this one, typically walk through a simple example of
 * Local development
 * Staging server
 * Continous integration testing environment
+
+## Not designed for
+
+* Distributed systems: No tooling for running containers across multiple hosts
+* Complex production environments: no autoscaling
