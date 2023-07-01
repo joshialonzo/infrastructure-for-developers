@@ -19,3 +19,9 @@ Docker tutorials, including this one, typically walk through a simple example of
 * Version control
 * Self-documenting
 * Easy management
+
+## Designed for
+
+* Local development
+* Staging server
+* Continous integration testing environment
