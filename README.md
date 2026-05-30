@@ -17,5 +17,6 @@
 ## AWS
 
 * [AWS](aws/README.md)
+* [AWS VPC](aws/vpc/README.md)
 * [AWS Regions](python-aws/regions/README.md)
 * [AWS IAM](python-aws/iam/README.md)
