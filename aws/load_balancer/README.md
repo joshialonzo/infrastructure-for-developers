@@ -1,14 +1,7 @@
 # AWS Elastic Load Balancer
 
-Learn to configure and manage the three main types of AWS Elastic Load Balancers:
-* classic,
-* application,
-and network load balancers.
-
-Understand how to set up:
-* target groups
-* configure security
-
-Manage features to ensure high availability:
-* sticky sessions
-* health checks
+1. [Application Load Balancers](application_load_balancers.md)
+2. [Network Load Balancers](network_load_balancers.md)
+3. [Gateway Load Balancers](gateway_load_balancers.md)
+4. [Classic Load Balancers](classic_load_balancers.md)
+5. [Auto Scaling](auto_scaling.md)
