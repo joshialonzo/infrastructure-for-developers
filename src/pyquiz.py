@@ -1,5 +1,6 @@
 from questions import QuestionMC
 from questions import QuestionTF
+from quiz import Quiz
 from answer import Answer
 
 
@@ -76,11 +77,16 @@ class QuizApp:
 
 
 if __name__ == "__main__":
+    qz = Quiz()
+    qz.name = "Sample Quiz"
+    qz.description = "This is a sample quiz!"
+
     q1 = QuestionTF()
     q1.text = "Broccoli is good for you?"
     q1.points = 5
     q1.correct_answer = "t"
-    q1.ask()
+    qz.questions.append(q1)
+
     q2 = QuestionMC()
     q2.text = "What is 2 + 2?"
     q2.points = 10
@@ -97,7 +103,8 @@ if __name__ == "__main__":
     ans.name = "c"
     ans.text = "5"
     q2.answers.append(ans)
-    q2.ask()
+    qz.questions.append(q2)
 
-    print(q1.is_correct)
-    print(q2.is_correct)
+    qz.total_points = q1.points + q2.points
+    result = qz.take_quiz()
+    print(result)
