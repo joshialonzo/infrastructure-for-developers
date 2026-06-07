@@ -47,11 +47,6 @@ class QuestionMC(Question):
                 continue
 
             response = response.lower()
-            if response[0] != "a" and response[0] != "b" and response[0] != "c" and response[0] != "d":
-                print("Sorry, that's not a valid response. Please try again.")
-                continue
-
-            response = response.lower()
             if response[0] == self.correct_answer:
                 self.is_correct = True
 

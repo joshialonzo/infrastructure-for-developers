@@ -11,6 +11,7 @@ class Quiz:
         self.score = 0
         self.correct_count = 0
         self.total_points = 0
+        self.completion_time = 0
 
     def print_header(self):
         print("\n\n************************************")
@@ -24,6 +25,7 @@ class Quiz:
         print("\n\n************************************", file=thefile, flush=True)
         print(f"RESULTS for {quiztaker}", file=thefile, flush=True)
         print(f"Date: {datetime.datetime.today()}", file=thefile, flush=True)
+        print(f"ELAPSED TIME: {self.completion_time}", file=thefile, flush=True)
         print(
             f"QUESTIONS: {self.correct_count} out of {len(self.questions)} correct",
             file=thefile, flush=True
@@ -37,6 +39,7 @@ class Quiz:
     def take_quiz(self):
         self.score = 0
         self.correct_count = 0
+        self.completion_time = 0
 
         for q in self.questions:
             q.is_correct = False
@@ -45,11 +48,20 @@ class Quiz:
 
         random.shuffle(self.questions)
 
+        start_time = datetime.datetime.now()
+
         for q in self.questions:
             q.ask()
             if q.is_correct:
                 self.correct_count += 1
                 self.score += q.points
+
+        end_time = datetime.datetime.now()
+        self.completion_time = datetime.timedelta(
+            seconds=round(
+                (end_time - start_time).total_seconds()
+            )
+        )
 
         print("**************************************\n")
 
