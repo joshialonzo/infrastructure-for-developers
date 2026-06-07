@@ -1,12 +1,16 @@
+from answer import Answer
+from manager import QuizManager
 from questions import QuestionMC
 from questions import QuestionTF
 from quiz import Quiz
-from answer import Answer
 
 
 class QuizApp:
+    QUIZ_FOLDER = "quizzes"
+
     def __init__(self):
         self.username = ""
+        self.qm = QuizManager(QuizApp.QUIZ_FOLDER)
 
     def startup(self):
         # print the greeting at startup
@@ -55,13 +59,15 @@ class QuizApp:
                 continue
             elif selection[0] == "L":
                 print("\nAvailable quizzes are: ")
+                self.qm.list_quizzes()
                 print("------------------------\n")
                 continue
             elif selection[0] == "T":
                 try:
                     quiz_number = int(input("Quiz number: "))
                     print(f"You have selected quiz {quiz_number}.")
-                    # TODO: Start the quiz
+                    self.qm.take_quiz(quiz_number, self.username)
+                    self.qm.print_results()
                 except ValueError:
                     self.menu_error()
                     continue
@@ -77,34 +83,5 @@ class QuizApp:
 
 
 if __name__ == "__main__":
-    qz = Quiz()
-    qz.name = "Sample Quiz"
-    qz.description = "This is a sample quiz!"
-
-    q1 = QuestionTF()
-    q1.text = "Broccoli is good for you?"
-    q1.points = 5
-    q1.correct_answer = "t"
-    qz.questions.append(q1)
-
-    q2 = QuestionMC()
-    q2.text = "What is 2 + 2?"
-    q2.points = 10
-    q2.correct_answer = "b"
-    ans = Answer()
-    ans.name = "a"
-    ans.text = "3"
-    q2.answers.append(ans)
-    ans = Answer()
-    ans.name = "b"
-    ans.text = "4"
-    q2.answers.append(ans)
-    ans = Answer()
-    ans.name = "c"
-    ans.text = "5"
-    q2.answers.append(ans)
-    qz.questions.append(q2)
-
-    qz.total_points = q1.points + q2.points
-    result = qz.take_quiz()
-    print(result)
+    app = QuizApp()
+    app.run()
