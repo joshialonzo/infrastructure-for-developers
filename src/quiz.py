@@ -1,4 +1,5 @@
 import datetime
+import random
 import sys
 
 
@@ -39,15 +40,17 @@ class Quiz:
 
         for q in self.questions:
             q.is_correct = False
-        
+
         self.print_header()
-        
+
+        random.shuffle(self.questions)
+
         for q in self.questions:
             q.ask()
             if q.is_correct:
                 self.correct_count += 1
                 self.score += q.points
-        
+
         print("**************************************\n")
 
         return (self.score, self.correct_count, self.total_points)
