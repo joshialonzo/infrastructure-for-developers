@@ -55,8 +55,24 @@ class Quiz:
             if q.is_correct:
                 self.correct_count += 1
                 self.score += q.points
+            print("------------------------------\n")
 
         end_time = datetime.datetime.now()
+
+        if self.correct_count != len(self.questions):
+            response = input(
+                "\nIt looks like you missed some questions. Re-do the wrong ones? (y/n) "
+            ).lower()
+            if response[0] == "y":
+                wrong_questions = [q for q in self.questions if not q.is_correct]
+                for q in wrong_questions:
+                    q.ask()
+                    if q.is_correct:
+                        self.correct_count += 1
+                        self.score += q.points
+                    print("------------------------------\n")
+                end_time = datetime.datetime.now()
+
         self.completion_time = datetime.timedelta(
             seconds=round(
                 (end_time - start_time).total_seconds()
