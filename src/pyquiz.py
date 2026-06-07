@@ -68,9 +68,13 @@ class QuizApp:
                     print(f"You have selected quiz {quiz_number}.")
                     self.qm.take_quiz(quiz_number, self.username)
                     self.qm.print_results()
-                except ValueError:
+
+                    dosave = input("Save the results? (y/n): ")
+                    dosave = dosave.capitalize()
+                    if len(dosave) > 0 and dosave[0] == "Y":
+                        self.qm.save_results()
+                except:
                     self.menu_error()
-                    continue
             else:
                 self.menu_error()
 

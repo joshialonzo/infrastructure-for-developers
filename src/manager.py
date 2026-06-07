@@ -1,5 +1,7 @@
-from pathlib import Path
+import datetime
 import importlib.util
+import os
+from pathlib import Path
 
 # Load parser.py explicitly from the same directory as this script
 _parser_path = Path(__file__).resolve().parent / "parser.py"
@@ -45,11 +47,19 @@ class QuizManager:
         self.results = self.the_quiz.take_quiz()
 
     def print_results(self):
-        pass
+        self.the_quiz.print_results(self.quiztaker)
 
     def save_results(self):
-        pass
+        today = datetime.datetime.now()
+        filename = f"QuizResults_{today.year}_{today.month}_{today.day}.txt"
 
+        n = 1
+        while os.path.exists(filename):
+            filename = f"QuizResults_{today.year}_{today.month}_{today.day}_{n}.txt"
+            n += 1
+
+        with open(filename, "w") as f:
+            self.the_quiz.print_results(self.quiztaker, f)
 
 if __name__ == "__main__":
     qm = QuizManager("quizzes")
